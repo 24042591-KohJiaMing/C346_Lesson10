@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import {StyleSheet, Text, View, TouchableOpacity, SectionList, Button, Image} from 'react-native';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 export default function App() {
   const renderItem = ({item}) => {
@@ -40,7 +41,7 @@ const datasource = [
       {key: 'Charmeleon', pic: "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_5-2x.png"},
       {key: 'Charizard', pic: "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_6-2x.png"},
     ],
-    title: <Text><FontAwesome5 name="fire-alt" size={20} color="black" />FIRE</Text>,
+    title: <Text style={{color: 'red'}}><FontAwesome5 name="fire-alt" size={20} />FIRE</Text>,
     bgcolor:"coral",
   },
   {
@@ -49,7 +50,7 @@ const datasource = [
       {key: 'Wartortle', pic: "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_8-2x.png"},
       {key: 'Blastoise', pic: "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_9-2x.png"},
     ],
-    title:"WATER",
+    title:<Text style={{color: 'blue'}}><FontAwesome6 name="droplet" size={20}/>WATER</Text>,
     bgcolor:"skyblue",
   }
 ];
@@ -81,5 +82,5 @@ const styles = StyleSheet.create({
   image: {
     width: 220,
     height: 300,
-  }
+  },
 });
