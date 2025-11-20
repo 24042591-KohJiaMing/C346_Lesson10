@@ -52,6 +52,15 @@ const datasource = [
     ],
     title:<Text style={{color: 'blue'}}><FontAwesome6 name="droplet" size={20}/>WATER</Text>,
     bgcolor:"skyblue",
+  },
+  {
+    data:[
+      {key: 'Bulbasaur', pic: "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_1-2x.png"},
+      {key: 'Ivysaur', pic: "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_2-2x.png"},
+      {key: 'Venusaur', pic: "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_3-2x.png"},
+    ],
+    title:<Text style={{color: 'lightgreen'}}><FontAwesome6 name="leaf" size={20}/>GRASS</Text>,
+    bgcolor:"green",
   }
 ];
 
